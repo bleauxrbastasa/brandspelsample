@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=devic e=width, initial-scale=1.0 " />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/brandspelLogo.png" alt="" /></a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Contact Us</h1>
+    </section>
+    <!-- Content -->
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-facebook"></i>
+            <span>
+              <h5>
+                <a class="link" href="https://www.facebook.com/brandspel/"
+                  >brandspel</a
+                >
+              </h5>
+              <p>Click, Were very active here!</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>contactbrandspel@gmail.com</h5>
+              <p>We reply within a day! For all inquiries.</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fab fa-discord"></i>
+            <span>
+              <h5>brandspel#6849</h5>
+              <p>So hip! We also accept inquiries here!</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>09487742564</h5>
+              <p>Open for calls all week, 24/7</p></span
+            >
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form action=""></form>
+        </div>
+        <div class="contact-col"></div>
+      </div>
+    </section>
+
+    <!--------FOOTER--------->
+    <section class="footer">
+      <h4>Socials</h4>
+
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Powered by Brandspel</p>
+    </section>
+
+    <!--------JAVA SCRIPT--------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
