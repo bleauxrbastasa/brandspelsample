@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="mobile-style.css" media="only screen and (max-width: 700px)" />
 </head>
 <body>
+<!--     
     <header>
         <nav class="aflmerch-nav">
             <a href="index.html"><img src="images/Logo Original Positive-01.png" alt="Brandspel Logo" /></a>
@@ -24,7 +25,7 @@
         
 
 
-    </header>
+    </header> -->
 
     <section class="call-for-models">
         <!-- <h1>AFL Merch Selling “Call for Models”</h1> -->
@@ -81,7 +82,7 @@
         </audio>
     
         <!-- Button to toggle mute -->
-        <button onclick="scrollToMoodboard()">For the love of AFL, Click me to View Moodboard</button>
+        <button onclick="scrollToMoodboard()">TURN ON AUDIO, and Click me to View Moodboard</button>
 
         
     </section>
@@ -439,11 +440,11 @@
             const targetPosition = window.pageYOffset + target.getBoundingClientRect().top;
             const startPosition = window.pageYOffset;
             const distance = targetPosition - startPosition;
-            const duration = 70000; // Shortened duration for a quicker scroll
+            const duration = 60000; // Shortened duration for a quicker scroll
             let start = null;
     
             function easeInOutSine(t) {
-                return t < 0.5 ? 2 * t * t : 1 - (Math.pow(1 - t, 2) * 2);
+                return t < 0.5 ? 2 * t * t : 1 - (Math.pow(1 - t, 2) * 1);
             }
     
             function step(timestamp) {
