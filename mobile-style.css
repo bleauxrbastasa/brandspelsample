@@ -1,0 +1,405 @@
+/* Mobile-specific styles */
+
+@font-face {
+    font-family: 'SFPro';
+    src: url(fonts/SF-Pro-Display-Ultralight.otf) format('opentype');
+    font-weight: ultralight;
+}
+
+@font-face {
+    font-family: 'helvetica-neue';
+    src: url(fonts/helveticaneue/HelveticaNeueLTPro-Lt.otf) format('opentype');
+    font-weight: light;
+}
+
+@font-face {
+    font-family: 'helvetica-neue';
+    src: url(fonts/helveticaneue/HelveticaNeueLTPro-Bd.otf) format('opentype');
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'helvetica-neue';
+}
+
+.header {
+    min-height: 50vh;
+    width: 100%;
+    background-image: url(images/muskan-gohrani-yiAcnRIAO1Q-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'SFPro', sans-serif;
+    font-weight: ultralight;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px; /* Smaller logo for mobile */
+}
+
+.nav-links {
+    position: fixed;
+    background: rgb(0, 0, 0);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.nav-links ul li {
+    display: block;
+}
+
+nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.text-box p {
+    font-size: 12px; /* Smaller font size for mobile */
+}
+
+.image-panels {
+    width: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'helvetica-neue';
+    font-weight: light;
+    color: #fff;
+}
+
+.row {
+    flex-direction: column;
+}
+
+.work-col,
+
+.video-work-col {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.work-col img {
+    object-fit: cover;
+    height: auto;
+}
+
+.call-for-models {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.client {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.work-col {
+    flex-basis: 100%;
+    max-width: 100%;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.work-col img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.martees {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.title {
+    text-align: left;
+    margin-top: 2%;
+}
+
+.cta {
+    margin: 50px auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 10px;
+    color: black;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: black;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: 12px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.icons .fa {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.contact-us {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-col div .fa {
+    font-size: 24px;
+    color: #F16522;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.contact-col div h5 {
+    font-family: 'helvetica-neue';
+    font-weight: light;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-col div p {
+    color: black;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link:hover {
+    transform: scale(1.5);
+    z-index: 3;
+    display: inline-block;
+    transition: .5s ease;
+    color: #F16522;
+    position: relative;
+    left: 3vh;
+    bottom: 1vh;
+}
+
+.contact-col h5 a {
+    color: #F16522;
+    text-decoration: underline;
+}
+
+.moodboard {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.video-inspo {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.call-for-models h1,
+.call-for-models p,
+.call-for-models ul {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.call-for-models ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.call-for-models li {
+    margin-bottom: 10px;
+}
+/* Mobile-specific styles for videos */
+
+/* Mobile-specific styles for videos */
+
+.video-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.video-work-col {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 20px; /* Add some spacing between videos */
+}
+
+.video-work-col video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-hov {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Adjust aspect ratio for portrait videos */
+@media (orientation: portrait) {
+    .video-work-col {
+        padding-bottom: 133.33%; /* 3:4 aspect ratio */
+    }
+}
+
+@media (orientation: landscape) {
+    .video-work-col {
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    }
+}
+
+
+button {
+    margin-top: 5%;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #DB3E1C;
+    background-color: #DB3E1C;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+button:hover, button:focus {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 0, 170, 0.5);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(247, 0, 0, 0.9);
+    }
+}
+
+button {
+    animation: pulse 2s infinite;
+}
