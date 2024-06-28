@@ -6,19 +6,10 @@
     <style>
         body {
             background-image: url('images/aflshoot/background.png'); /* Replace with your background image path */
-    background-repeat: no-repeat; /* Ensures the image does not repeat */
-    background-size: cover; /* Ensures the image covers the entire area */
-    background-position: center center; /* Centers the background image */
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            background-repeat: repeat; /* Ensures the image repeats infinitely */
+            background-size: auto; /* Keeps the original size of the image on smaller screens */
+            
         }
-        @media (max-width: 700px) {
-            body {
-                background-size: contain; /* Ensures the whole image is visible on smaller screens */
-                background-attachment: scroll; /* Allows the background to scroll with the content */
-            }
-        }
-
-        
 
       .invisible {
           position: absolute;
