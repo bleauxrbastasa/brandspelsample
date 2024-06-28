@@ -372,8 +372,8 @@ button {
     margin-top: 5%;
     font-weight: bold;
     padding: 10px 20px;
-    border: 2px solid #DB3E1C;
-    background-color: #DB3E1C;
+    border: 2px solid #87A680;
+    background-color: #87A680;
     color: white;
     font-size: 16px;
     border-radius: 5px;
@@ -393,10 +393,10 @@ button:hover, button:focus {
 
 @keyframes pulse {
     0%, 100% {
-        box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+        box-shadow: 0 0 20px #87A680;
     }
     50% {
-        box-shadow: 0 0 40px rgba(247, 0, 0, 0.9);
+        box-shadow: 0 0 40px #87A680;
     }
 }
 
