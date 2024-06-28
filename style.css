@@ -539,6 +539,7 @@ h2{
 }
 button {
     margin-top: 5%;
+    margin-bottom: 5%;
     font-weight: bold; /* Make text bold */
     padding: 10px 20px; /* Add some padding */
     border: 2px solid #DB3E1C; /* Solid border with a color */
@@ -554,6 +555,26 @@ button {
     overflow: hidden; /* Ensures no overflow */
     display: inline-block; /* Only as wide as necessary */
 }
+
+button .start {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bold; /* Make text bold */
+    padding: 10px 20px; /* Add some padding */
+    border: 2px solid #00ff22; /* Solid border with a color */
+    background-color: #DB3E1C; /* Background color */
+    color: white; /* Text color */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* Remove outline */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and shadow */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative; /* Needed for absolute positioning inside */
+    overflow: hidden; /* Ensures no overflow */
+    display: inline-block; /* Only as wide as necessary */
+}
+
 
 button:hover, button:focus {
     transform: scale(1.05); /* Slightly enlarge on hover/focus */
