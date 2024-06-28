@@ -1,4 +1,14 @@
 /* Mobile-specific styles */
+body {
+    background-image: url('images/aflshoot/background.png'); /* Replace with your background image path */
+    background-repeat: repeat; /* Ensures the image repeats */
+    background-size: contain; /* Ensures the image scales to fit within the container */
+    background-position: center center; /* Centers the background image */
+    background-attachment: scroll; /* Allows the background to scroll with the content */
+    min-height: 100vh; /* Ensures the background covers the full viewport height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
 
 @font-face {
     font-family: 'SFPro';
