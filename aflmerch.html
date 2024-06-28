@@ -410,7 +410,7 @@
             navLinks.style.right = "-200px";
         }
 
-        const audioElem = document.getElementById('bg-music');
+       
 
 
         function scrollToMoodboard() {
@@ -418,28 +418,29 @@
 
             var button = document.querySelector('button'); // Select the button using its tag, ID, or class
             var audio = document.getElementById('bg-music'); // Get the audio element by ID
+            var button = document.querySelector('button'); // Select the button using its tag, ID, or class
+            var audio = document.getElementById('bg-music'); // Get the audio element by ID
         
             button.disabled = true;  // Disable the button
             audio.currentTime = 0;   // Reset the audio playback to the start
             audio.play();            // Play the audio from the beginning
-
-
+        
             // Additional logic for your scrolling or other actions
             // ...
         
-            // Re-enable the button after 5000 milliseconds (5 seconds)
+            // Re-enable the button after 15000 milliseconds (15 seconds)
             setTimeout(function() {
                 button.disabled = false;
             }, 15000);
+        
+            if (audio.muted) {
+                audio.muted = false;
+                audio.play(); // Play audio if muted
+            } else {
+                audio.muted = true;
+            }
 
             
-
-            if (audioElem.muted) {
-                audioElem.muted = false;
-                audioElem.play(); // Play audio if muted
-            } else {
-                audioElem.muted = true;
-            }
 
 
 

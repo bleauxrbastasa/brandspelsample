@@ -542,8 +542,8 @@ button {
     margin-bottom: 5%;
     font-weight: bold; /* Make text bold */
     padding: 10px 20px; /* Add some padding */
-    border: 2px solid #DB3E1C; /* Solid border with a color */
-    background-color: #DB3E1C; /* Background color */
+    border: 2px solid #87A680; /* Solid border with a color */
+    background-color: #87A680; /* Background color */
     color: white; /* Text color */
     font-size: 16px; /* Adjust font size */
     border-radius: 5px; /* Rounded corners */
@@ -562,7 +562,7 @@ button .start {
     font-weight: bold; /* Make text bold */
     padding: 10px 20px; /* Add some padding */
     border: 2px solid #00ff22; /* Solid border with a color */
-    background-color: #DB3E1C; /* Background color */
+    background-color: #87A680; /* Background color */
     color: white; /* Text color */
     font-size: 16px; /* Adjust font size */
     border-radius: 5px; /* Rounded corners */
@@ -584,10 +584,10 @@ button:hover, button:focus {
 /* Animation to make the button more noticeable */
 @keyframes pulse {
     0%, 100% {
-        box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+        box-shadow: 0 0 20px #87A680;
     }
     50% {
-        box-shadow: 0 0 40px rgba(247, 0, 0, 0.9);
+        box-shadow: 0 0 40px #87A680;
     }
 }
 
